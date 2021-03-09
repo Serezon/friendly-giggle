@@ -1,5 +1,5 @@
 const TodoItem = ({ text }) => {
-  return <li>{text}</li>;
-};
+  return <li>Text is {text}</li>
+}
 
-export default TodoItem;
+export default TodoItem
