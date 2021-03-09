@@ -1,5 +1,5 @@
 const TodoItem = ({ text }) => {
-  return <li>Text is {text}</li>
+  return <li>Text - {text}</li>
 }
 
 export default TodoItem
