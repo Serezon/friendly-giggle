@@ -25,31 +25,18 @@
     }
   },
   "lint-staged": {
-    "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
-      "prettier --write"
-    ],
-    "src/**/*.{js,jsx,ts,tsx}": [
-      "eslint --fix"
-    ]
+    "*.{js,ts,tsx}": ["eslint --quiet --fix"],
+    "*.{json,md,html}": ["prettier --write"]
   },
   "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ],
-    "plugins": [
-      "prettier"
-    ],
+    "extends": ["react-app", "react-app/jest"],
+    "plugins": ["prettier"],
     "rules": {
       "prettier/prettier": "error"
     }
   },
   "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
+    "production": [">0.2%", "not dead", "not op_mini all"],
     "development": [
       "last 1 chrome version",
       "last 1 firefox version",
